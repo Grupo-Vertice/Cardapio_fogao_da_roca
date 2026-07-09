@@ -171,15 +171,16 @@
   }
   .esgotado{
     text-decoration: line-through;
-    text-decoration-color:#ff3b30;
-    color:#999;
+    text-decoration-color: #ff3b30;
+    text-decoration-thickness: 2px;
+    color: #999;
 }
 
-.esgotado::after{
-    content:"  (Esgotado)";
-    color:#ff3b30;
-    text-decoration:none;
-    font-size:0.85em;
+.status-esgotado{
+    color: #ff3b30;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 8px;
 }
 </style>
 </head>
@@ -213,7 +214,7 @@
     <div class="item-row"><span class="item-name">Água</span><span class="dots"></span><span class="price">3</span></div>
     <div class="item-row"><span class="item-name">Água com Gás</span><span class="dots"></span><span class="price">4</span></div>
     <div class="item-row"><span class="item-name">Suco Natural de Laranja 1L</span><span class="dots"></span><span class="price">18</span></div>
-    <div class="item-row"><span class="item-name esgotado">Vitamina de Morango c/ Leite 1L</span><span class="dots"></span><span class="priceesgotado">20</span></div>
+    <div class="item-row"><span class="item-name esgotado">Vitamina de Morango c/ Leite 1L</span><span class="status-esgotado">Esgotado</span><span class="dots"></span><span class="price esgotado">20</span></div>
     <div class="item-row"><span class="item-name">Del Valle Frut 300ml</span><span class="dots"></span><span class="price">8</span></div>
     <div class="item-row"><span class="item-name">Tubaína 600 ml</span><span class="dots"></span><span class="price">7</span></div>
 
